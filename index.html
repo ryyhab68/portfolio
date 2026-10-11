@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rihab Chnayna | Geomatics specialist: GIS, QGIS, LiDAR and InSAR</title>
+  <meta name="description" content="Portfolio of Rihab Chnayna, geomatics specialist in GIS and QGIS mapping, LiDAR point clouds and Sentinel-1 InSAR. Available for freelance projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="brand" href="#top">Rihab Chnayna</a>
+      <nav aria-label="Main">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#maps" data-i18n="nav.maps">Mapping</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#project" data-i18n="nav.project">Project</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <canvas class="contours" id="contours" aria-hidden="true"></canvas>
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <h1>Rihab Chnayna</h1>
+          <p class="lead" data-i18n="hero.lead">I turn LiDAR point clouds and Sentinel-1 radar images into maps and models that support decisions.</p>
+          <p class="sub" data-i18n="hero.sub">Geomatics specialist based in Ben Arous, Tunisia. Open to freelance GIS, mapping and Earth observation projects.</p>
+          <div class="actions">
+            <a class="btn primary" data-cv="auto" href="assets/CV_Rihab_Chnayna_EN.docx" download data-i18n="hero.cv">Download CV</a>
+            <a class="btn ghost" href="#contact" data-i18n="hero.contact">Contact me</a>
+          </div>
+        </div>
+
+        <div class="cloud">
+          <canvas id="cloud" role="img" data-i18n-aria="cloud.label" aria-label="Interactive 3D point cloud of a synthetic landscape with ground, vegetation, buildings and power lines"></canvas>
+          <div class="cloud-bar">
+            <div class="modes" role="group" data-i18n-aria="cloud.modes" aria-label="Colour mode">
+              <button type="button" data-mode="raw" aria-pressed="false" data-i18n="cloud.raw">Raw points</button>
+              <button type="button" data-mode="height" aria-pressed="false" data-i18n="cloud.height">By height</button>
+              <button type="button" data-mode="class" aria-pressed="true" data-i18n="cloud.class">By class</button>
+            </div>
+            <ul class="legend" aria-label="Classes">
+              <li><i style="background:#C9B48C"></i><span data-i18n="class.ground">Ground</span></li>
+              <li><i style="background:#5FBF7F"></i><span data-i18n="class.veg">Vegetation</span></li>
+              <li><i style="background:#FF6B5B"></i><span data-i18n="class.bld">Building</span></li>
+              <li><i style="background:#F2B705"></i><span data-i18n="class.wire">Wire</span></li>
+              <li><i style="background:#7FD3E0"></i><span data-i18n="class.tower">Tower</span></li>
+            </ul>
+          </div>
+          <p class="hint" data-i18n="cloud.hint">Synthetic data. Move your cursor over the cloud to reveal the classes.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="tools" aria-label="Tools">
+      <div class="track">
+        <ul>
+          <li>QGIS</li><li>ArcGIS</li><li>PostGIS</li><li>Python</li><li>SNAP</li><li>ENVI</li><li>Google Earth Engine</li><li>PyGMTSAR</li><li>MicroStation TerraScan</li><li>GeoServer</li><li>Sharper Shape</li><li>SQL</li><li>JavaScript</li><li>AutoCAD</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>QGIS</li><li>ArcGIS</li><li>PostGIS</li><li>Python</li><li>SNAP</li><li>ENVI</li><li>Google Earth Engine</li><li>PyGMTSAR</li><li>MicroStation TerraScan</li><li>GeoServer</li><li>Sharper Shape</li><li>SQL</li><li>JavaScript</li><li>AutoCAD</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section wrap" id="about">
+      <div class="sec-head"><h2 data-i18n="about.h">About</h2></div>
+      <div class="about-grid">
+        <div class="prose">
+          <p data-i18n="about.p1">I hold a Professional Master's in Geomatics from the Faculty of Sciences of Tunis. Day to day I classify LiDAR point clouds of electrical networks, build 3D models of infrastructure and check the quality of geospatial data before delivery.</p>
+          <p data-i18n="about.p2">I also measure ground movement with Sentinel-1 radar interferometry and build GIS models for hazard assessment, from slope and rainfall to land use and drainage.</p>
+        </div>
+        <ul class="focus">
+          <li style="--c:#F2B705"><h3 data-i18n="about.f1t">GIS and mapping</h3><p data-i18n="about.f1d">Spatial analysis in QGIS and ArcGIS, and maps built to be read and used.</p></li>
+          <li style="--c:#7FD3E0"><h3 data-i18n="about.f2t">Radar and InSAR</h3><p data-i18n="about.f2d">Ground displacement from Sentinel-1, from SLC imagery to line-of-sight results.</p></li>
+          <li style="--c:#FF6B5B"><h3 data-i18n="about.f3t">LiDAR and 3D</h3><p data-i18n="about.f3d">Point cloud classification, quality control and 3D models of infrastructure.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS: layer stack ================= -->
+    <section class="band dark" id="skills">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 data-i18n="sk.h">Skills</h2>
+          <p data-i18n="sk.intro">Each skill group works like a map layer. Pick one to see what is inside.</p>
+        </div>
+        <div class="layers-ui">
+          <div class="stack-wrap" aria-hidden="true">
+            <div class="stack" id="stack"></div>
+          </div>
+          <div class="qgis-panel">
+            <div class="qp-head" data-i18n="sk.panel">Layers</div>
+            <ul class="qp-list" id="sk-list"></ul>
+            <div class="qp-props" aria-live="polite">
+              <h3 id="sk-title"></h3>
+              <p id="sk-desc"></p>
+              <ul class="chips" id="sk-tags"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MAPPING: map sheet ================= -->
+    <section class="section wrap" id="maps">
+      <div class="sec-head">
+        <h2 data-i18n="map.h">Mapping</h2>
+        <p data-i18n="map.intro">An interactive map sheet in the style of a QGIS layout. Switch layers on and off, change their opacity and read the values under your cursor.</p>
+      </div>
+
+      <div class="sheet">
+        <div class="sheet-map">
+          <div class="mapframe" id="mapframe">
+            <canvas id="map" width="1040" height="728" role="img" data-i18n-aria="map.label" aria-label="Synthetic map with elevation, contours, drainage, roads, landslide susceptibility and InSAR points"></canvas>
+            <span class="marker" id="map-marker" hidden></span>
+            <svg class="north" viewBox="0 0 48 64" aria-label="North" role="img">
+              <polygon points="24,6 36,48 24,40 12,48" fill="#0F2A33"/>
+              <polygon points="24,6 36,48 24,40" fill="#F2B705"/>
+              <text x="24" y="63" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="14" fill="#0F2A33">N</text>
+            </svg>
+            <div class="scalebar" aria-hidden="true"><div class="sb-bar"><i></i><i></i></div><div class="sb-lbl"><span>0</span><span>1</span><span>2 km</span></div></div>
+          </div>
+          <div class="cartouche">
+            <div><small data-i18n="map.ct1">Title</small><strong data-i18n="map.title">Landslide susceptibility and ground displacement</strong></div>
+            <div><small data-i18n="map.ct2">Data</small><strong data-i18n="map.data">Synthetic, for illustration</strong></div>
+            <div><small data-i18n="map.ct3">Author</small><strong>Rihab Chnayna</strong></div>
+          </div>
+        </div>
+
+        <aside class="qgis-panel light">
+          <div class="qp-head" data-i18n="map.layers">Layers</div>
+          <ul class="qp-checks" id="map-layers"></ul>
+          <div class="qp-row">
+            <label for="susc-op" data-i18n="map.opacity">Susceptibility opacity</label>
+            <input type="range" id="susc-op" min="0" max="100" value="60">
+          </div>
+          <div class="qp-head" data-i18n="map.read">Under the cursor</div>
+          <dl class="readout" id="readout" aria-live="off">
+            <div><dt data-i18n="map.elev">Elevation</dt><dd id="r-elev">–</dd></div>
+            <div><dt data-i18n="map.slope">Slope</dt><dd id="r-slope">–</dd></div>
+            <div><dt data-i18n="map.susc">Susceptibility</dt><dd id="r-susc">–</dd></div>
+          </dl>
+          <div class="qp-head" data-i18n="map.leg">Legend</div>
+          <div class="mlegend">
+            <div data-for="elev"><span class="lt" data-i18n="map.l.elev">Elevation and hillshade</span><div class="ramp"></div><div class="ramp-lbl"><span id="e-min">120 m</span><span id="e-max">620 m</span></div></div>
+            <div data-for="susc"><span class="lt" data-i18n="map.l.susc">Landslide susceptibility</span>
+              <ul class="sw"><li><i style="background:#CFE3DD"></i><span data-i18n="ov.c1">Low</span></li><li><i style="background:#7FB8AE"></i><span data-i18n="ov.c2">Moderate</span></li><li><i style="background:#F2B705"></i><span data-i18n="ov.c3">High</span></li><li><i style="background:#C8421E"></i><span data-i18n="ov.c4">Very high</span></li></ul></div>
+            <div data-for="insar"><span class="lt" data-i18n="map.insarT">InSAR LOS velocity (mm/yr)</span>
+              <ul class="sw"><li><i class="dot" style="background:#B2182B"></i><span>&lt; −20</span></li><li><i class="dot" style="background:#EF8A62"></i><span>−20 / −8</span></li><li><i class="dot" style="background:#F5F5F5"></i><span>−8 / +4</span></li><li><i class="dot" style="background:#2166AC"></i><span>&gt; +4</span></li></ul></div>
+          </div>
+        </aside>
+      </div>
+      <p class="note" data-i18n="map.note">Synthetic terrain and values generated in your browser. Not a real site.</p>
+    </section>
+
+    <!-- ================= WORKFLOW ================= -->
+    <section class="band tint" id="workflow">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 data-i18n="wf.h">Workflow</h2>
+          <p data-i18n="wf.intro">From raw data to a map you can use.</p>
+        </div>
+        <ol class="steps">
+          <li><span class="n">1</span><h3 data-i18n="wf.1t">Acquire</h3><p data-i18n="wf.1d">Sentinel-1 SLC images, airborne LiDAR, DEMs and field data.</p></li>
+          <li><span class="n">2</span><h3 data-i18n="wf.2t">Process</h3><p data-i18n="wf.2d">SNAP, PyGMTSAR, ENVI and TerraScan prepare the data.</p></li>
+          <li><span class="n">3</span><h3 data-i18n="wf.3t">Analyse</h3><p data-i18n="wf.3d">QGIS, ArcGIS, PostGIS and Python turn it into measurements and models.</p></li>
+          <li><span class="n">4</span><h3 data-i18n="wf.4t">Map and deliver</h3><p data-i18n="wf.4d">Maps, 3D models and reports, checked before they leave.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section wrap" id="experience">
+      <div class="sec-head"><h2 data-i18n="exp.h">Experience</h2></div>
+      <div class="jobs">
+        <article class="job current">
+          <p class="when" data-i18n="job1.d">07/2025 – Present</p><span class="rail" aria-hidden="true"></span>
+          <div>
+            <h3 data-i18n="job1.t">Senior Technician, Geospatial Data and LiDAR</h3>
+            <p class="org">GISICA Tunisia, Ben Arous</p>
+            <ul>
+              <li data-i18n="job1.b1">Classify and process LiDAR point clouds of electrical network corridors with MicroStation (TerraScan).</li>
+              <li data-i18n="job1.b2">Verify and quality-control geospatial data, and build 3D models of complex infrastructure from airborne laser scans.</li>
+              <li data-i18n="job1.b3">Coordinate geospatial projects from analysis to delivery, and write technical documentation and progress reports.</li>
+              <li data-i18n="job1.b4">Work in Sharper Shape, solve data issues and share best practices in digitization and quality control.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <p class="when">02/2025 – 07/2025</p><span class="rail" aria-hidden="true"></span>
+          <div>
+            <h3 data-i18n="job2.t">Intern, Geospatial and InSAR analysis</h3>
+            <p class="org">Office National des Mines, Tunis</p>
+            <ul><li data-i18n="job2.b1">Analysed geological data in a GIS and used radar interferometry (InSAR) to monitor ground movement.</li></ul>
+          </div>
+        </article>
+        <article class="job">
+          <p class="when">02/2023 – 05/2023</p><span class="rail" aria-hidden="true"></span>
+          <div>
+            <h3 data-i18n="job3.t">Intern, Spatial databases</h3>
+            <p class="org">STEG, Tunis</p>
+            <ul><li data-i18n="job3.b1">Designed spatial datasets and managed spatial databases.</li></ul>
+          </div>
+        </article>
+        <article class="job">
+          <p class="when">07/2022</p><span class="rail" aria-hidden="true"></span>
+          <div>
+            <h3 data-i18n="job4.t">Intern, Surveying and cadastre</h3>
+            <p class="org">Office de la Topographie et du Cadastre, Tataouine</p>
+            <ul><li data-i18n="job4.b1">Marked boundaries and surveyed land in the field, and produced technical plans for land registration.</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT ================= -->
+    <section class="band alt" id="project">
+      <div class="wrap">
+        <div class="sec-head"><h2 data-i18n="proj.h">Project</h2></div>
+        <h3 class="proj-title" data-i18n="proj.t">Master's thesis: landslide assessment with Sentinel-1 InSAR and GIS</h3>
+        <p class="org" data-i18n="proj.org">Ghardimaou area, Jendouba, north-western Tunisia</p>
+        <div class="prose"><p data-i18n="proj.intro">A geospatial study of landslide susceptibility and ground displacement, combining radar interferometry with a GIS model.</p></div>
+        <ul class="proj-list">
+          <li data-i18n="proj.b1">Sentinel-1 SLC imagery prepared in SNAP, then DInSAR and time-series processing with PyGMTSAR in Google Colab.</li>
+          <li data-i18n="proj.b2">DEM data used for terrain correction; displacement analysed along the radar line of sight (LOS).</li>
+          <li data-i18n="proj.b3">GIS susceptibility model built from slope, rainfall, lithology and permeability, land use, drainage network and roads.</li>
+          <li data-i18n="proj.b4">Multi-criteria analysis (MCA) and weighted overlay to rank areas by relative susceptibility.</li>
+          <li data-i18n="proj.b5">InSAR and GIS outputs combined to support landslide monitoring, hazard assessment and environmental risk management.</li>
+        </ul>
+
+        <div class="overlay" aria-labelledby="ov-h">
+          <h3 id="ov-h" data-i18n="ov.h">How the susceptibility map is built</h3>
+          <p data-i18n="ov.p">Each factor is scored from low to high, multiplied by a weight, then summed. Move the sliders to see how the map responds.</p>
+          <div class="ov-grid">
+            <div>
+              <canvas id="ov-canvas" width="448" height="448" role="img" data-i18n-aria="ov.label" aria-label="Synthetic landslide susceptibility map that updates with the weights"></canvas>
+              <ul class="ov-legend" id="ov-legend"></ul>
+            </div>
+            <div>
+              <div id="ov-sliders" class="sliders"></div>
+              <button type="button" class="btn small" id="ov-reset" data-i18n="ov.reset">Reset weights</button>
+            </div>
+          </div>
+          <p class="note" data-i18n="ov.note">Synthetic data for illustration only. These are not results from the thesis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section wrap" id="education">
+      <div class="sec-head"><h2 data-i18n="edu.h">Education</h2></div>
+      <div class="jobs">
+        <article class="job">
+          <p class="when">2023 – 2025</p><span class="rail" aria-hidden="true"></span>
+          <div><h3 data-i18n="edu.m">Professional Master's in Geomatics</h3><p class="org" data-i18n="edu.org">Faculty of Sciences of Tunis</p></div>
+        </article>
+        <article class="job">
+          <p class="when">2020 – 2023</p><span class="rail" aria-hidden="true"></span>
+          <div><h3 data-i18n="edu.l">Bachelor's degree in Geomatics</h3><p class="org" data-i18n="edu.org2">Faculty of Sciences of Tunis</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="band contact" id="contact">
+      <div class="wrap">
+        <h2 class="big" data-i18n="contact.big">Have a project to map?</h2>
+        <p class="lead small" data-i18n="contact.p">Send me a message with the area, the data you have and the deadline.</p>
+        <p class="links">
+          <a href="mailto:chnainaryhab@gmail.com">chnainaryhab@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ryhab-chnaina-196681370" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="assets/CV_Rihab_Chnayna_EN.docx" download data-i18n="contact.cvEn">Download CV (English)</a>
+          <a class="btn ghost" href="assets/CV_Rihab_Chnayna_FR.docx" download data-i18n="contact.cvFr">Download CV (French)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot"><div class="wrap"><p>© 2026 Rihab Chnayna</p></div></footer>
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
